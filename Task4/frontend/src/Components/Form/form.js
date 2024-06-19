@@ -13,7 +13,7 @@ export const Form = ( { userInput , onFormChange, onFormSubmit} )=> {
     <>
         <form onSubmit={handleSubmit}>
             <input type='text' required value={userInput} onChange={handleChange} placeholder="Input a new to-do"></input>
-            <input type='submit' class='like' value='Add'></input>
+            <input type='submit' class='addButton' value='Add'></input>
         </form>
     </>
     )

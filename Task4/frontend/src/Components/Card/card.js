@@ -95,7 +95,7 @@ export const Card = ({ listOfTodos})=> {
                                 <>
                                     {todo.task_detail}
                                     <button onClick={() => handleEditClick(todo)}>Edit</button>
-                                    <button onClick={() => handleDeleteSubmit(todo,todo.task_id)}>Delete</button>
+                                    <button onClick={() => handleDeleteSubmit(todo,todo.task_id)} className='deleteButton'>Delete</button>
                                 </>
                             )}
                         </li>
