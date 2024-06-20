@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Checkbox } from '../Checkbox/checkbox';
 
-export const Card = ({ listOfTodos})=> {
+export const Card = ({ listOfTodos, updateTodos})=> {
     const [editingTaskId, setEditingTaskId] = useState(null);
     const [editedTaskDetail, setEditedTaskDetail] = useState("");
 
@@ -9,8 +9,7 @@ export const Card = ({ listOfTodos})=> {
 
     const handleEditClick = (task) => {
         setEditingTaskId(task.task_id);
-        setEditedTaskDetail(task.task_detail);
-        
+        setEditedTaskDetail(task.task_detail);    
     };
 
     const handleEditChange = (event) => {
@@ -32,11 +31,12 @@ export const Card = ({ listOfTodos})=> {
                 todo.task_id === task_id ? { ...todo, task_detail: editedTaskDetail } : todo
             );
             setEditingTaskId(null);
+            updateTodos(updatedTodos)
         } else {
             console.error('Failed to update the task');
         }
 
-        window.location.reload();
+        //window.location.reload();
 
     };
 
@@ -55,11 +55,12 @@ export const Card = ({ listOfTodos})=> {
         if (response.ok) {
             const updatedTodos = listOfTodos.filter(todo => todo.task_id !== task_id); 
             setDeletingTaskId(null);
+            updateTodos(updatedTodos);
         } else {
             console.error('Failed to delete the task');
         }
         
-        window.location.reload();
+        
 
     };
 

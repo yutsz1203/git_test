@@ -30,11 +30,16 @@ export const TodoPage = ()=> {
             }
         })
     }
+
+    const updateTodos = (updatedTodos) => {
+        setTodo(updatedTodos)
+    }
+    
     return (
         <>
             <h1>To-Do List Service</h1>
             <Form userInput={addTodo} onFormChange={handleFormChange} onFormSubmit={handleFormSubmit}/>
-            <Card listOfTodos={todo}/>
+            <Card listOfTodos={todo} updateTodos={updateTodos}/>
         </>
     )
 }
