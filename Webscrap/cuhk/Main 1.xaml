@@ -1,0 +1,421 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,2560" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.Office.Interop.Excel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>Microsoft.Office.Interop.Word</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,4053" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="courseUrl" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_2</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="courseDescription" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Browse Course Catalog" sap:VirtualizedContainerService.HintSize="626,3965" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3725" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="captchaValue" />
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="courseInfo" />
+              <Variable x:TypeArguments="x:String" Name="baseSelector" />
+              <Variable x:TypeArguments="x:String" Name="id" />
+              <Variable x:TypeArguments="x:Int32" Name="counterMax" />
+              <Variable x:TypeArguments="x:Int32" Name="counter" />
+              <Variable x:TypeArguments="sd:DataTable" Name="courses" />
+              <Variable x:TypeArguments="x:String" Name="courseCode" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'Course Subject'" sap:VirtualizedContainerService.HintSize="530,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="LING - Linguistics" ScopeIdentifier="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>GNED - General Education</x:String>
+                  <x:String>GPAD - Government &amp; Public Administration</x:String>
+                  <x:String>GPEC - Global Political Economy</x:String>
+                  <x:String>GPGC - Government and Politics (Greater China)</x:String>
+                  <x:String>GPSU - Global Physician-Leadership Stream</x:String>
+                  <x:String>GRMD - Geography &amp; Resource Management</x:String>
+                  <x:String>GRON - Gerontology</x:String>
+                  <x:String>HIST - History</x:String>
+                  <x:String>HKSL - Hong Kong Sign Language</x:String>
+                  <x:String>HPSB - Master of Public Health</x:String>
+                  <x:String>HSGS - Housing Studies</x:String>
+                  <x:String>HSOC - Health Sociomedical Sciences</x:String>
+                  <x:String>HSYS - Health Systems</x:String>
+                  <x:String>HTMG - Hotel And Tourism Management</x:String>
+                  <x:String>IASP - International Asian Studies</x:String>
+                  <x:String>IBBA - Integrated BBA Programme</x:String>
+                  <x:String>IEMS - Information Engineering (TPg)</x:String>
+                  <x:String>IERG - Information Engineering</x:String>
+                  <x:String>INFD - Infectious Diseases</x:String>
+                  <x:String>ITAL - Italian</x:String>
+                  <x:String>JASP - Japanese Studies</x:String>
+                  <x:String>KORE - Korean</x:String>
+                  <x:String>LAWS - Law</x:String>
+                  <x:String>LDTE - Learning Design and Technology</x:String>
+                  <x:String>LING - Linguistics</x:String>
+                  <x:String>LSCI - Life Sciences Courses</x:String>
+                  <x:String>LSCM - Logistics and Supply Chain Management</x:String>
+                  <x:String>LSED - Liberal Studies</x:String>
+                  <x:String>MAED - Mathematics Education</x:String>
+                  <x:String>MAEG - Mechanical &amp; Automation Engineering</x:String>
+                  <x:String>MAPE - Parent Education</x:String>
+                  <x:String>MATH - Mathematics</x:String>
+                  <x:String>MAVE - Values Education</x:String>
+                  <x:String>MBAC - MBA Programmes</x:String>
+                  <x:String>MBTE - Molecular Biotechnology</x:String>
+                  <x:String>MCLE - Chinese Language Education (TPg)</x:String>
+                  <x:String>MCLS - Curriculum Dev. &amp; Teaching of Liberal Studies</x:String>
+                  <x:String>MCNS - Stroke and Clinical Neurosciences</x:String>
+                  <x:String>MECM - Early Childhood Education</x:String>
+                  <x:String>MEDF - Medicine Faculty Package</x:String>
+                  <x:String>MEDM - Endocrinology, Diabetes &amp; Metabolism</x:String>
+                  <x:String>MEDP - Molecular Medicine and Biostatistics</x:String>
+                  <x:String>MEDU - Medicine</x:String>
+                  <x:String>MESC - Medical Sciences (Postgraduate)</x:String>
+                  <x:String>MGNT - Management</x:String>
+                  <x:String>MHLS - Mental Health</x:String>
+                  <x:String>MICY - Microbiology</x:String>
+                  <x:String>MIEG - Mathematics and Information Engineering</x:String>
+                  <x:String>MITE - Information Technology in Education</x:String>
+                  <x:String>MKTG - Marketing</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" CVScreenId="578b1a69-c2e6-41d1-8e6b-98f5f32d25b0" CvElementArea="242, 254, 725, 38" CvType="InputBox" DesignTimeRectangle="244, 256, 720, 35" DesignTimeScaleFactor="2" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddl_subject' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddl_subject' type='' tag='SELECT' class='normalDropDownListStyle' aaname='' /&gt;" Guid="c2a2ceed-6ec4-4ca7-b11a-a6e1d960bb95" InformativeScreenshot="12dd2549c363a69489410de8618577e5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="578b1a69-c2e6-41d1-8e6b-98f5f32d25b0" CvTextArea="9, 259, 205, 27" CvTextArgument="Course Subject" CvType="Text" DesignTimeRectangle="8, 254, 234, 39" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='fieldHeader' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='fieldHeader' type='' tag='TD' aaname='Course Subject' check:innerText='Course Subject' /&gt;" Guid="e3e94347-9ff1-4753-a368-c48649642f94" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <Assign sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[courseCode]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">LING</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,271" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter the captcha value" Title="CAPTCHA">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[captchaValue]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Verification Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Text="[captchaValue]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" CVScreenId="1b3b03f3-8f91-4b99-80af-4a81cf1e1357" CvElementArea="124, 284, 211, 24" CvType="InputBox" DesignTimeRectangle="126, 286, 208, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_captcha' tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_captcha' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="a8024dda-aa79-4fbb-9596-944d6102ba26" InformativeScreenshot="b37a17f082d82904ab64a37d55de5081.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1b3b03f3-8f91-4b99-80af-4a81cf1e1357" CvTextArea="8, 286, 117, 13" CvTextArgument="Verification Code" CvType="Text" DesignTimeRectangle="8, 285, 117, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='fieldHeader' aaname='Verification Code' check:innerText='Verification Code' /&gt;" Guid="eca74797-693d-43de-8062-be9a3268077e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" CVScreenId="e3db165b-a71e-4326-bafb-6dc9ef3de9a0" CvElementArea="124, 307, 110, 23" CvTextArea="158, 313, 42, 12" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="126, 309, 107, 21" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='btn_search' tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='btn_search' type='submit' tag='INPUT' class='normalButton' aaname='Search' check:text='Search' /&gt;" Guid="1edf4ccc-dd90-4ed4-81a6-8b068eb5da63" InformativeScreenshot="fb9e523e225028e7bb92f7c2b6ab7a27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[courseInfo]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Course Nbr' ReferenceIdx='0' Name='courseCode'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Course Nbr Url' ReferenceIdx='1' Name='Course Nbr Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Course Title' ReferenceIdx='2' Name='courseName'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Course Title Url' ReferenceIdx='3' Name='Course Title Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Course Nbr' attr='fulltext' name2='Course Nbr Url' attr2='href' /&gt;&lt;column name='Course Title' attr='fulltext' name2='Course Title Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="530,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" DesignTimeRectangle="8, 346, 590, 422" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='gv_detail' tag='TABLE' /&gt;" Guid="58d2b0a8-00be-4b68-b211-18565e3b3168" InformativeScreenshot="ebc51efa9faf501031615a9d779e4ce7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Assign sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">2</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:BuildDataTable DataTable="[courseDescription]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;course_description&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000000000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[courseInfo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1587" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1391" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="textSelector" />
+                      <Variable x:TypeArguments="x:String" Name="variable1" />
+                      <Variable x:TypeArguments="x:String" Name="textString" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[id]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[counter.ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[baseSelector]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" +
+"&lt;webctrl id='gv_detail' tag='TABLE' /&gt;" +
+"&lt;webctrl tableRow='" +id+ "' tag='A' /&gt;"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="[baseSelector]" Guid="120fcad7-e266-4b86-a29b-e24278748706" SearchSteps="Selector" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[textSelector]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" +
+"&lt;webctrl tableRow='3' tag='TABLE' /&gt;" +
+"&lt;webctrl id='uc_course_lbl_crse_descrlong' tableRow='1' tag='SPAN' /&gt;"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NGetText DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_2" TextString="[textString]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="[textSelector]" Guid="d3b2d928-09f5-4a07-a851-93a6e97ec4fe" SearchSteps="Selector" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{textString}]" DataTable="[courseDescription]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Return'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4bb91e63-4823-4276-bddf-a8da93ec9bd9" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" CVScreenId="16e5715d-1377-4186-ab4c-6631767c874d" CvElementArea="17, 205, 110, 24" CvTextArea="50, 212, 42, 11" CvTextArgument="Return" CvType="Button" DesignTimeRectangle="18, 207, 107, 21" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn_course_return' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn_course_return' tag='INPUT' type='submit' class='normalButton' aaname='Return' check:text='Return' /&gt;" Guid="7cb218df-f45d-42da-9e7f-a8891881a804" InformativeScreenshot="092d71b36098f7f3f09c66d9440948d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="530,112" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[&quot;C:\Users\Intern\Desktop\Cu_courses\course\&quot;+courseCode+&quot;&quot;]" />
+            <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="False" CsvAction="Write" DataTable="[courseDescription]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[&quot;C:\Users\Intern\Desktop\Cu_courses\course\&quot;+courseCode+&quot;\&quot;+courseCode+&quot;_d.csv&quot;]" sap:VirtualizedContainerService.HintSize="530,234" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_5" ShouldQuote="True" />
+            <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="False" CsvAction="Write" DataTable="[courseInfo]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[&quot;C:\Users\Intern\Desktop\Cu_courses\course\&quot;+courseCode+&quot;\&quot;+courseCode+&quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="530,227" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_6" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="985be704afb3ddaad82219ea85141793.jpg" Reference="3DDxRLN_Eki_2165uHs1aA/xmgJEk04GUOLfz-gtdJ4yQ" Selector="&lt;html app='chrome.exe' title='Browse Course Catalog' /&gt;" Title="Browse Course Catalog" Url="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
